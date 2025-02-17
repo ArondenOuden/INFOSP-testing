@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>Math jax</title> 
+</head> 
+
+<body> 
+
+	<!-- Using mathjax style to write 
+		math notation in browser -->
+	<!-- Setting color to green -->
+	<br />quadratic equation: 
+	${\color{green} ax^2+bx+c=0}$ 
+	<br /> 
+	roots of quadratic equation: 
+	$$x = {-q \pm \sqrt{q^2-4pr} \over 2p}.$$ 
+	<br /> 
+
+	<!-- Setting color to red -->
+	Einstein equation: E=${\color{red} mc^2}$ 
+	<br /> 
+	Linear equation: ${\color{blue} ax+by+c+d_{2}}$ 
+
+	<!-- Linking to CDN -->
+	<script id="MathJax-script" async src= 
+"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+	</script> 
+
+	<!-- Configuration of math jax -->
+	<script> 
+		MathJax = { 
+			autoload: { 
+				color: [], 
+				colorV2: ['color'] 
+			}, 
+			tex: { 
+				inlineMath: [['$', '$'], 
+						['\\(', '\\)']] 
+			}, 
+			svg: { 
+				fontCache: 'global' 
+			} 
+		}; 
+	</script> 
+</body> 
+
+</html> 
